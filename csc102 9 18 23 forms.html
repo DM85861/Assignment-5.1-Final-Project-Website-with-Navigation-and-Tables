@@ -1,0 +1,114 @@
+<!--Dennis Morgan Forms Assignment for 9 18 23
+Let's GO!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src = "csc102 9 18 23 login.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC 102 9 18 23 forms</title>
+    <link rel="stylesheet" href = "csc102 9 7 23 DM.css">
+</head>
+<body>
+    <h1 style="color: darkorange">
+        <center>
+             The Seven Stumps BonFire Festival
+        </center>
+    </h1>
+    
+    <center><h1>Login Here <br> Wood Types Used at Seven Stumps Bonfire Festival</h1></center>
+    <!--Login with this first and last name: Dee Mee / passcode: 12345
+    Sound & Event Driven Programming Assignment-->
+    <br>
+    <center><table id = "data" border = "2" width = "85%">
+         
+        <thead>
+            <th>Pecan</th>
+            <th>White Pine</th>
+            <th>Red Oak</th>
+            <th>Hickory</th>
+        </thead>
+                      <div class="container"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pine Centers/Limbs</th>
+                        <th> White Oak seat cuts</th>
+                        <th>Pecan Centers/Limbs</th>
+                        <th>Cooking Hickory ONLY!</th>
+                        
+                    </tr>
+                </thead>
+                <col style = "background-color: darkorange;">
+                <col style = "background-color: orangered;">
+                <col style = "background-color: darkorange;">
+                <col style = "background-color: blue;">
+                <tbody>
+                    <tr id = "tbody"> 
+                        <td>4 Full Cords</td>
+                        <td>15 Full Cords</td>
+                        <td>26 Full Cords</td>
+                        <td>2 Face Cords</td>
+                        
+                    </tr>
+                    <tr id = "tbody">
+                        <td>No rot, no sap</td>
+                        <td>No rot, no sap</td>
+                        <td>No rot, no sap</td>
+                        <td>Some rot, no sap</td>
+                        
+                    </tr>
+                    <tr id = "tbody">
+                        <td>Sun Dried</td>
+                        <td>Climite Controled Ev</td>
+                        <td>Sun Dried</td>
+                        <td>Sun Dried</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Buy 1 Full Cord $45</td>
+                        <td>Buy 1 Full Cord $250</td>
+                        <td>Buy 1 Full Cord $20</td>
+                        <td>Buy 1 Face/NO Full/ Cord $150</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Harvested on property</td>
+                        <td>Harvested in Missouri, Table Rock Lake</td>
+                        <td>Harvested in Desha Co. AR, Pussum Fork</td>
+                        <td>Harvested in NW Arkansas, Bentonville</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </table></center>
+    <br> <br> <br>
+   <center><p>
+        <button onclick = "FireIn();"> StartFire</button>
+        <button onclick = "FireOut();"> StopFire</button>
+    </p>
+
+    <audio controls>
+        <source src= "csc102 9 25 23 fireplace-fire-crackling-loop.mp3" type = "audio/mpeg"></source>
+        </audio></center>
+
+       <p id = "loginStatus">Current Login</p>
+
+       <center><h2>Login with this first and last name: Dee Mee / passcode: 12345
+        Sound & Event Driven Programming Assignment</h2></center>
+    
+    <center><form id = "credSubmit" onsubmit = "return false">
+        First Name:     <input type = "text" id = "BeginName"/>
+        <br> 
+        Last Name:      <input type = "text" id = "endname"/>
+        <br> 
+        PassCode:       <input type = "number" id = "PassNum"/>
+        <input type = "submit" onclick = "CheckInput();">
+        <br>
+        <br>
+    </br>
+    </form></center>
+    
+</body>
+</html>
